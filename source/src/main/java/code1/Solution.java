@@ -1,4 +1,4 @@
-package com.duxf.code1;
+package main.java.code1;
 
 /**
  * Created by duxf on 2017/7/13.
