@@ -18,8 +18,8 @@ public class Solution {
                     break;
                 }
             }
-            //复原i位置的flag
-            chMap[s.charAt(i)] = 0;
+            //复原映射位
+            chMap = new int[256];
         }
         return result;
     }
