@@ -8,8 +8,14 @@ public class NumArray2 {
     int[] sum;
 
     public NumArray2(int[] nums) {
-        sum = new int[nums.length];
-        sum[0] = nums[0];
+
+        sum = new int[nums.length + 1];
+        if(nums.length == 0) {
+            sum[0] = 0;
+        }else {
+            sum[0] = nums[0];
+        }
+
         for (int n = 1; n < nums.length; n++) {
             sum[n] = nums[n] + sum[n - 1];
         }
